@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   height: 100vh;
   padding-top: 6rem;
-  background: url("../images/skybackground.jpg") center/cover no-repeat;
+  background: url("images/skybackground.jpg") center/cover no-repeat;
   color: white;
   text-align: center;
 }
