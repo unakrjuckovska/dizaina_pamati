@@ -176,6 +176,7 @@ h1, h2, h3, h4, h5, h6 {
   scrollbar-width: thin;
   scrollbar-color: var(--accent-color) transparent;
   padding: 0 0.5rem;
+  scroll-padding-left: 1rem;
 }
 .nav-center::-webkit-scrollbar {
   height: 6px; 
@@ -542,4 +543,9 @@ body {
     padding: 0.15rem 0.3rem;
   }
 }
-
+@media (min-width: 769px) {
+  .nav-center {
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
