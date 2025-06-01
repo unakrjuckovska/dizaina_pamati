@@ -169,12 +169,13 @@ h1, h2, h3, h4, h5, h6 {
 .nav-center {
   grid-column: 3 / span 8;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 1.5rem;
   flex-wrap: nowrap;
   overflow-x: auto;
-  scrollbar-width: thin; 
+  scrollbar-width: thin;
   scrollbar-color: var(--accent-color) transparent;
+  padding: 0 0.5rem;
 }
 .nav-center::-webkit-scrollbar {
   height: 6px; 
@@ -456,7 +457,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 10px;
   object-fit: cover;
 }
-/* ✅ RESPONSIVE CLEANUP */
+/*RESPONSIVE*/
 body {
   overflow-x: hidden;
 }
@@ -523,6 +524,15 @@ body {
   .section5 .video video {
     max-width: 240px;
     width: 90%;
+  }
+
+  .nav-center::-webkit-scrollbar {
+    height: 6px;
+    display: block;
+  }
+
+  .nav-center {
+    scrollbar-width: auto;
   }
 }
 
